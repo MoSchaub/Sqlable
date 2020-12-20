@@ -61,7 +61,7 @@ public protocol Sqlable {
     /// - Parameters:
     ///        - row: An object which can be used to access data from a row returned from the database.
     ///    - Throws: A SqlError, preferrebly ReadError, if the row couldn't be parsed correctly.
-    init(row : ReadRow) throws
+    init(row : ReadRow, database: SqliteDatabase?) throws
 }
 
 public extension Sqlable {
