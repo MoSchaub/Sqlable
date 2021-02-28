@@ -305,10 +305,10 @@ Also, since model instances are just value types, you can freely move them aroun
 
 ## How do I install it?
 
-If you’re using Carthage (you should!), just add this to your Cartfile:
+Just add this to your package.swift file
 
 ```
-github "ulrikdamm/Sqlable"
+.package(name: "Sqlable", url: "https://github.com/MoSchaub/Sqlable", .exact(Version(1, 0, 0)))
 ```
 
 And then just in your source files:
